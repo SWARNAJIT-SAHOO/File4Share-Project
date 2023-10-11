@@ -8,8 +8,8 @@
     tools:context=".UploadPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="351dp"
-        android:layout_height="357dp"
+        android:layout_width="359dp"
+        android:layout_height="489dp"
         android:background="@drawable/shape"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,9 +34,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.579"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.103" />
+            app:layout_constraintVertical_bias="0.014" />
 
         <EditText
             android:id="@+id/ed1"
@@ -50,9 +51,10 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.569"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            app:layout_constraintVertical_bias="0.185"></EditText>
+            app:layout_constraintVertical_bias="0.548"></EditText>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView11"
@@ -87,5 +89,17 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="31dp"
+            app:layout_constraintBottom_toTopOf="@+id/ed1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/up" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
