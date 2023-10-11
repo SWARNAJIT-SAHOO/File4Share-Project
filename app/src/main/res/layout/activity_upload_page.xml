@@ -8,8 +8,8 @@
     tools:context=".UploadPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="359dp"
-        android:layout_height="489dp"
+        android:layout_width="354dp"
+        android:layout_height="466dp"
         android:background="@drawable/shape"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.411">
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/n1"
             android:layout_width="290dp"
             android:layout_height="79dp"
             android:layout_marginHorizontal="10dp"
@@ -40,7 +40,7 @@
             app:layout_constraintVertical_bias="0.014" />
 
         <EditText
-            android:id="@+id/ed1"
+            android:id="@+id/name"
             android:layout_width="280dp"
             android:layout_height="67dp"
             android:background="@drawable/shape"
@@ -53,52 +53,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.569"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/n1"
             app:layout_constraintVertical_bias="0.548"></EditText>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView11"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt1"
             android:layout_width="280dp"
             android:layout_height="67dp"
-            android:layout_marginTop="20dp"
             android:backgroundTint="#433E3E"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="11dp"
+            android:text="Upload"
+            android:textColor="#FDD835"
+            android:textSize="20dp"
+            android:onClick="upload"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ed1"
-            app:layout_constraintVertical_bias="0.422">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/baseline_file_upload_24"
-                    android:backgroundTint="#FDD835"
-                    android:onClick="upload"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints"></androidx.appcompat.widget.AppCompatButton>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
+            app:layout_constraintTop_toBottomOf="@+id/name"></androidx.appcompat.widget.AppCompatButton>
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="96dp"
-            android:layout_height="94dp"
+            android:layout_width="88dp"
+            android:layout_height="77dp"
             android:layout_marginTop="31dp"
-            app:layout_constraintBottom_toTopOf="@+id/ed1"
+            app:layout_constraintBottom_toTopOf="@+id/name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/n1"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/up" />
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -32,7 +34,6 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
-
 
     }
 
@@ -62,4 +63,29 @@ public class HomePage extends AppCompatActivity {
         Intent in = new Intent(HomePage.this, UploadPage.class);
         startActivity(in);
     }
+
+
+    public void logout1(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(HomePage.this);
+        builder.setMessage("you want to Log-out ?");
+        builder.setTitle("Are You Sure !!");
+        builder.setCancelable(false);
+
+        builder.setPositiveButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
+            FirebaseAuth.getInstance().signOut();
+            Intent in = new Intent(HomePage.this,MainActivity.class);
+            startActivity(in);
+            finish();
+        });
+
+        builder.setNegativeButton("No", (DialogInterface.OnClickListener) (dialog, which) -> {
+            dialog.cancel();
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
+
+
+
+
 }
