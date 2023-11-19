@@ -22,12 +22,9 @@ public class HomePage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);   //to make full screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_home_page);
+  setContentView(R.layout.activity_home_page);
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
-
     }
 
 
@@ -54,6 +51,10 @@ public class HomePage extends AppCompatActivity {
 
     public void uploadpage(View view){
         Intent in = new Intent(HomePage.this, UploadPage.class);
+        startActivity(in);
+    }
+    public void downloadpage(View view){
+        Intent in = new Intent(HomePage.this, download_file.class);
         startActivity(in);
     }
 

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "510977681122",
+    "firebase_url": "https://file4share-d6a4e-default-rtdb.firebaseio.com",
     "project_id": "file4share-d6a4e",
     "storage_bucket": "file4share-d6a4e.appspot.com"
   },
@@ -10,6 +11,25 @@
         "mobilesdk_app_id": "1:510977681122:android:61aa071039495f899660bb",
         "android_client_info": {
           "package_name": "com.example.file4share"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1W6hYMIBbPA6M7LM8pmZIntSFXTG-jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510977681122:android:6dbc20f6d1bf835f9660bb",
+        "android_client_info": {
+          "package_name": "com.example.fileshare"
         }
       },
       "oauth_client": [],
